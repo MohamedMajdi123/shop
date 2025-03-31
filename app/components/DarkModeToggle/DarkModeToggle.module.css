@@ -1,0 +1,28 @@
+.container {
+    border: 2px solid var(--color-primary);
+    border-radius: 30px;
+    display: flex;
+    padding: 2px;
+    position: relative;
+    height: 38px;
+    cursor: pointer;
+}
+.icon {
+    font-size: 22px;
+}
+.switcher {
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    z-index: 1000;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 2px;
+    transition: .3s ease-in-out;
+}
+.switcher.dark {
+    left: 0;
+}
+.switcher.light {
+    right: 0;
+}
